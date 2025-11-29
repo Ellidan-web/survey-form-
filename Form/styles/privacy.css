@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #fffaf5 0%, #fff5eb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+#privacy-screen {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy-box {
+    max-width: 720px;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(230, 81, 0, 0.08);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid #ffedd5;
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0069ff, #048cfd);
+    
+}
+
+.privacy-box h2 {
+    margin-top: 0;
+    color: #0069ff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.privacy-box p {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+label[for="agree"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+#continue-btn {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #0069ff, #048cfd);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(230, 81, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+#continue-btn:disabled {
+    background: #cccccc;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#continue-btn:not(:disabled):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 81, 0, 0.4);
+}
+
+#continue-btn:not(:disabled):active {
+    transform: translateY(0);
+}
