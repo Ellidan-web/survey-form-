@@ -190,3 +190,7 @@ Commit your changes
 Push to the branch
 
 Create a Pull Request
+
+🆘 Support For technical issues or questions regarding this system, please contact the owner and developer:
+
+ELLIDAN T. MULTO
