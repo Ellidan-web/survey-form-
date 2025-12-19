@@ -86,7 +86,7 @@ const officeServices = {
   "OFFICE C": [
     "Health Check Services",
     "Medicine Distribution",
-    "Medical Certificate Issuance"
+    "Medical Document Request"
   ],
   "OFFICE D": [
     "Employment Assistance",
@@ -95,7 +95,7 @@ const officeServices = {
   ],
   "OFFICE E": [
     "Financial Transaction Processing",
-    "Tax/Fees Collection",
+    "Fee Processing",
     "Payment Verification"
   ],
   "OFFICE F": [
@@ -114,7 +114,7 @@ const officeServices = {
     "Details Correction Service"
   ],
   "OFFICE I": [
-    "Emergency Response Coordination",
+    "Emergency Support Coordination",
     "Public Safety Information",
     "Training/Drill Assistance"
   ],
