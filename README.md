@@ -1,12 +1,12 @@
 # Feedback Survey System
 
-A comprehensive web-based feedback collection system designed for offices to measure client satisfaction and improve public service delivery.
+A comprehensive web-based feedback collection system designed for offices to measure Customer Feedback and improve public service delivery.
 
 ---
 
 ## 📋 Project Overview
 
-This project implements a **Client Satisfaction Measurement (CSM) system** that allows citizens to provide feedback on their recent transactions with government offices. The system is built with modern web technologies and follows **data privacy best practices**.
+This project implements a **Customer Feedback Survey (CFS) system** that allows citizens to provide feedback on their recent transactions with Organization offices. The system is built with modern web technologies and follows **data privacy best practices**.
 
 ---
 
