@@ -26,7 +26,7 @@ This project implements a **Client Satisfaction Measurement (CSM) system** that 
 - Demographic data (age, gender, barangay)  
 - Transaction details (date, office, service availed)  
 
-**Citizen's Charter Assessment**
+**Service Standards Assessment**
 - Awareness and visibility evaluation  
 - Helpfulness assessment  
 - Multiple choice responses  
@@ -146,7 +146,7 @@ Office visited
 
 Service availed
 
-Citizen's Charter feedback
+Service Standards feedback
 
 Service quality ratings
 
