@@ -1,6 +1,6 @@
-# Government Feedback Survey System
+# Feedback Survey System
 
-A comprehensive web-based feedback collection system designed for government offices to measure client satisfaction and improve public service delivery.
+A comprehensive web-based feedback collection system designed for offices to measure client satisfaction and improve public service delivery.
 
 ---
 
@@ -22,7 +22,7 @@ This project implements a **Client Satisfaction Measurement (CSM) system** that 
 ### Survey Components
 
 **Client Information**
-- Client type (Citizen/Business/Government)  
+- Client type (Citizen/Business/Organization)  
 - Demographic data (age, gender, barangay)  
 - Transaction details (date, office, service availed)  
 
@@ -127,7 +127,7 @@ Office and Service Configuration
 Edit the officeServices object in survey.js to match your offices and services.
 
 Barangay List
-Update the barangay options in survey.html to reflect your local government units.
+Update the barangay options in survey.html to reflect your local units.
 
 ## 📊 Data Collected
 Required Information
