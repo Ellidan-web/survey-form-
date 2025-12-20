@@ -1,69 +1,49 @@
 # Feedback Survey System
 
-A comprehensive web-based feedback collection system designed for offices to measure Customer Feedback and improve public service delivery.
+A web-based Customer Feedback Survey (CFS) system designed for offices to collect structured feedback and improve public service delivery. Built with a privacy-first approach and a lightweight backend using Google Apps Script.
 
----
+## 🚀 Overview
 
-## 📋 Project Overview
+This system allows users to submit feedback through a multi-step survey flow:
+Privacy Agreement → Survey Form → Success Page.
+Submissions are processed via Google Apps Script and stored in a Google Spreadsheet (used as a lightweight database).
 
-This project implements a **Customer Feedback Survey (CFS) system** that allows citizens to provide feedback on their recent transactions with Organization offices. The system is built with modern web technologies and follows **data privacy best practices**.
+Note: The project uses mock/demo data for demonstration purposes.
 
----
+✨ Key Features
+Privacy-first design (RA 10173 – Data Privacy Act of 2012)
+Responsive and mobile-friendly UI
+Multi-stage form flow
+Google reCAPTCHA v2 protection
+Dynamic office & service selection
+Emoji-based and Likert-scale satisfaction ratings
+Optional comments and email follow-up
 
-## 🎯 Features
+## 🛠 Tech Stack
+Frontend
+HTML5, CSS3 (Flexbox, Grid, Custom Properties)
+JavaScript (form handling & API integration)
+Backend
+Google Apps Script (acts as API layer)
+Google Sheets (mock data storage)
+Security
+Google reCAPTCHA v2
+HTTPS-based data submission
 
-### Core Functionality
-- **Privacy-First Approach:** Compliant with the Data Privacy Act of 2012 (RA 10173)  
-- **Multi-Stage Form Process:** Privacy agreement → Survey → Success confirmation  
-- **Responsive Design:** Works seamlessly on desktop, tablet, and mobile devices  
-- **reCAPTCHA Integration:** Prevents spam submissions  
-- **Dynamic Form Elements:** Office-specific services populate automatically  
-
-### Survey Components
-
-**Client Information**
-- Client type (Citizen/Business/Organization)  
-- Demographic data (age, gender, barangay)  
-- Transaction details (date, office, service availed)  
-
-**Service Standards Assessment**
-- Awareness and visibility evaluation  
-- Helpfulness assessment  
-- Multiple choice responses  
-
-**Service Quality Dimensions (SQD)**
-- 9-point satisfaction scale with emoji ratings  
-- Covers timeliness, fairness, courtesy, and outcome  
-- 6-point Likert scale (Strongly Disagree → Strongly Agree + N/A)  
-
-**Optional Feedback**
-- Suggestions and comments  
-- Optional email collection for follow-up  
-
----
-
-## 🛠️ Technical Stack
-
-**Frontend**
-- HTML5: Semantic markup structure  
-- CSS3: Custom properties, Flexbox, Grid, responsive design  
-- JavaScript: Form handling, dynamic content, API integration  
-
-**Styling & UX**
-- Montserrat Google Font for clean typography  
-- CSS Custom Properties for consistent theming  
-- Gradient Backgrounds for visual appeal  
-- Interactive Elements: hover effects, smooth transitions  
-- Accessibility: proper form labels and focus states  
-
-**External Services**
-- Google reCAPTCHA v2: Bot protection  
-- Google Apps Script: Backend data processing (configurable)  
-
----
+## 📊 Data Flow
 ```
-## 📁 Project Structure
+User Form Submission
+        ↓
+Google Apps Script (API)
+        ↓
+Google Spreadsheet (Mock Data)
+```
+The spreadsheet is used only as a demo data source.
+In production, it would remain private and inaccessible to end users.
 
+
+## 📁 Project Structure
+```
 Form/
 ├── assets/
 │ └── image/
@@ -81,116 +61,22 @@ Form/
 ├── success.html # Submission confirmation
 └── README.md
 ```
----
+## ⚙️ Setup (Optional Backend)
 
-## 🚀 Installation & Setup
+Deploy a Google Apps Script as a Web App
 
-1. **Clone or download the project files**  
-2. **Configure Backend (Optional):**  
-   - Set up Google Apps Script for data storage  
-   - Update the `scriptURL` in `survey.js` with your web app URL  
-   - Configure reCAPTCHA site key in `survey.html`  
-3. **Deploy:**  
-   - Can be hosted on any web server (Apache, Nginx, GitHub Pages, etc.)  
-   - No server-side dependencies required for basic functionality  
+Update the scriptURL in survey.js
 
----
+Configure reCAPTCHA site key in survey.html
 
-## ⚙️ Configuration
+Deploy on any static hosting (GitHub Pages, Netlify, etc.)
 
-**reCAPTCHA Setup**
-1. Register at [Google reCAPTCHA](https://www.google.com/recaptcha/)  
-2. Replace the `data-sitekey` in `survey.html`:
-
-```
-<div class="g-recaptcha" data-sitekey="YOUR_ACTUAL_SITE_KEY"></div>
-Google Apps Script Integration
-
-Create a new Google Apps Script project
-
-Implement doPost() function to handle form submissions
-
-Deploy as web app and update scriptURL in survey.js
-```
-## 🎨 Customization
-Theming
-Modify CSS custom properties in survey.css:
-
-css
-Copy code
-:root {
-    --primary-color: #0069ff;
-    --secondary-color: #0580fb;
-    /* Update colors to match your organization */
-}
-Office and Service Configuration
-Edit the officeServices object in survey.js to match your offices and services.
-
-Barangay List
-Update the barangay options in survey.html to reflect your local units.
-
-## 📊 Data Collected
-Required Information
-
-Client type
-
-Transaction date
-
-Gender
-
-Age
-
-Barangay
-
-Office visited
-
-Service availed
-
-Service Standards feedback
-
-Service quality ratings
-
-Optional Information
-
-Suggestions/comments
-
-Email address
-```
-```
 ## 🔒 Privacy & Compliance
-Data Privacy Act Compliant (Philippines RA 10173)
 
-Transparent Data Handling: clear privacy notice before form entry
+Clear privacy notice before form access
 
-Optional Personal Data: email is optional
+Optional personal data collection
 
-Secure Transmission via HTTPS
-```
-```
-## 🐛 Troubleshooting
-Common Issues
+No sensitive real-world data stored
 
-Form not submitting → Check reCAPTCHA and internet connection
-
-Services not loading → Verify officeServices object in survey.js
-
-Styling issues → Ensure all CSS files are properly linked
-
-Debug Mode
-
-Use browser developer tools to monitor JavaScript console errors
-
-## 🤝 Contributing
-Fork the project
-
-Create a feature branch
-
-Commit your changes
-
-Push to the branch
-
-Create a Pull Request
-
-## 🆘 Support For technical issues or questions regarding this system, please contact the owner and developer:
-
-ELLIDAN T. MULTO
+Mock data used for demo purposes only
