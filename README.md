@@ -2,7 +2,7 @@
 
 A web-based Customer Feedback Survey (CFS) system designed for offices to collect structured feedback and improve public service delivery. Built with a privacy-first approach and a lightweight backend using Google Apps Script.
 
-## 🚀 Overview
+## Overview
 
 This system allows users to submit feedback through a multi-step survey flow:
 Privacy Agreement → Survey Form → Success Page.
@@ -10,7 +10,7 @@ Submissions are processed via Google Apps Script and stored in a Google Spreadsh
 
 Note: The project uses mock/demo data for demonstration purposes.
 
-✨ Key Features
+## Key Features
 Privacy-first design (RA 10173 – Data Privacy Act of 2012)
 Responsive and mobile-friendly UI
 Multi-stage form flow
@@ -19,7 +19,7 @@ Dynamic office & service selection
 Emoji-based and Likert-scale satisfaction ratings
 Optional comments and email follow-up
 
-## 🛠 Tech Stack
+## Tech Stack
 Frontend
 HTML5, CSS3 (Flexbox, Grid, Custom Properties)
 JavaScript (form handling & API integration)
@@ -30,7 +30,7 @@ Security
 Google reCAPTCHA v2
 HTTPS-based data submission
 
-## 📊 Data Flow
+## Data Flow
 ```
 User Form Submission
         ↓
@@ -42,7 +42,7 @@ The spreadsheet is used only as a demo data source.
 In production, it would remain private and inaccessible to end users.
 
 
-## 📁 Project Structure
+## Project Structure
 ```
 Form/
 ├── assets/
@@ -61,7 +61,7 @@ Form/
 ├── success.html # Submission confirmation
 └── README.md
 ```
-## ⚙️ Setup (Optional Backend)
+## Setup (Optional Backend)
 
 Deploy a Google Apps Script as a Web App
 
@@ -71,7 +71,7 @@ Configure reCAPTCHA site key in survey.html
 
 Deploy on any static hosting (GitHub Pages, Netlify, etc.)
 
-## 🔒 Privacy & Compliance
+## Privacy & Compliance
 
 Clear privacy notice before form access
 
